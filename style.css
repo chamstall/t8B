@@ -1,0 +1,64 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap");
+
+.roboto {
+    font-family:'Roboto Slab', serif;
+}
+.header_wrapper {
+    background-image: url("img/header-bg.jpg");
+    background-repeat: no-repeat;
+    /* background-attachment: fixed; */
+    background-size: cover;
+    height: 700px;
+}
+.header_wrapper .nav-item .nav-link:hover {
+    color: #ffc800;
+}
+.header_wrapper .nav-item {
+    padding: 15px;
+}
+.services .card{ 
+    border: 0;
+}
+.portfolio{ 
+    background-color: #F8F9FA;
+}
+.portfolio .card,.portfolio .card img{ 
+    border: 0;
+    border-radius:0;
+}
+.portfolio .card .card-img-overlay{ 
+    display: flex;
+    justify-content: center ;
+    align-items: center ;
+    height: calc(75% + 5px) ;
+    border-radius: 0 ;
+    opacity: 0 ;
+    transition: opacity 0.3s ease-in-out;
+}
+.portfolio .card .card-img-overlay:hover{ 
+    background-color:rgba(255, 200, 0, 0.9);
+    opacity: 1;
+}
+.btn{ 
+    border:none;
+}
+.portfolio .card .modal-dialog{ 
+    width: 98%;
+    height: 95%;
+    top:50%;
+    left:50%;
+    transform: translate(-50% ,-50% );
+}
+@media (max-width:672px){ 
+    .portfolio .card .btn-close {
+        font-size: 20px;
+    } 
+}
+@media (min-width:768px){ 
+    .portfolio .card .btn-close {
+        font-size: 50px;
+    }
+    .portfolio .card .modal-body h1{ 
+        font-size: 70px;
+    } 
+}
