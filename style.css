@@ -10,7 +10,7 @@
     background-size: cover;
     height: 700px;
 }
-.header_wrapper .nav-item .nav-link:hover {
+.header_wrapper .nav-item .nav-link:hover{
     color: #ffc800;
 }
 .header_wrapper .nav-item {
@@ -61,4 +61,235 @@
     .portfolio .card .modal-body h1{ 
         font-size: 70px;
     } 
+}
+/* .about .circle-timeline{ 
+    border:7px solid #E9ECEF;
+}
+.about .box{
+    position: relative;
+    width: 45%;
+    padding: 10px 50px;
+}
+.about .box-contenu{ 
+    padding: 20px 30px;
+    position: relative;
+}
+.left-box{
+    left:0;
+}
+.right-box{ 
+    left: 55%;
+}
+.box img,.box .last-circle-of-timeline{ 
+    position: absolute;
+    width:130px;
+    border:7px solid #E9ECEF;
+    border-radius: 50%;
+    z-index: 10;
+    top:32px;
+    right: -130px;
+}
+.last-circle-of-timeline{ 
+    height: 130px;
+    background-color: #ffc800;
+}
+.right-box img{ 
+    left:-130px;
+}
+.timeline::after{ 
+    content: '';
+    position: absolute;
+    width: 2px;
+    height: 100%;
+    background-color: #E9ECEF;
+    top: 32px;
+    left:50%;
+    z-index: -1;
+    animation: moveline 6s linear forwards;
+}
+@keyframes moveline { 
+    0%{ 
+        height: 0;
+    }
+    100%{ 
+        height: 100%;
+    }
+}
+@media (max-width:1400px){
+    .timeline::after{ 
+        left:60px;
+    }
+    .box img,.box .last-circle-of-timeline{ 
+        width: 100px;
+    }
+    .last-circle-of-timeline{ 
+        height: 100px;
+    }
+    .last-circle-of-timeline p{ 
+        font-size: 14px;
+    }
+    .box h2{ 
+        font-size: 22px;
+    }
+    .box h3{ 
+        font-size:20px ;
+    }
+    .about .box{ 
+        width: 100%;
+        padding-left: 80px;
+        padding-right: 25px;
+    }
+    .right-box{ 
+        left: 0;
+    }
+    .right-box img ,.left-box img { 
+        left:0;
+    }
+    .last-circle-of-timeline{ 
+        left: 0;
+    }
+} */
+.about img{ 
+    border-radius: 50%;
+    border: 7px solid #E9ECEF;
+}
+.about .row { 
+    margin-bottom: 100px;
+}
+.timeline::after{ 
+    content: '';
+    position: absolute;
+    width: 2px;
+    height: 97%;
+    background-color: #E9ECEF;
+    top: 32px;
+    left:50%;
+    z-index: -1;
+}
+.div-img-circle{ 
+    position: relative;
+}
+.div-img-circle img{ 
+    position: absolute;
+    top:0;
+}
+.last-circle-of-timeline{ 
+    background-color: #ffc800;
+    border-radius:100%;
+    border: 7px solid #E9ECEF;
+    width: 200px;
+    height: 200px;
+    margin: auto;
+}
+@media (max-width:1400px){ 
+    .about img,.last-circle-of-timeline { 
+        width: 150px;
+        height: 150px;
+    }
+}
+@media (max-width:992px){ 
+    .about img ,.last-circle-of-timeline{ 
+        width: 130px;
+        height: 130px;
+    }
+    .row{ 
+        display: flex;
+        justify-content: center;
+    }
+    .timeline::after{ 
+        left:12%;
+    }
+}
+@media (max-width:768px){ 
+    .about img,.last-circle-of-timeline { 
+        width: 100px;
+        height: 100px;
+    }
+    .last-circle-of-timeline{ 
+        font-size: 13px;
+    }
+}
+@media (max-width:576px){ 
+    .about img ,.last-circle-of-timeline{ 
+        width: 90px;
+        height: 90px;
+    }
+    .last-circle-of-timeline{ 
+        font-size: 10px;
+    }
+}
+@media (max-width:380px){ 
+    .about img ,.last-circle-of-timeline{ 
+        width: 70px;
+        height: 70px;
+    }
+    .last-circle-of-timeline{ 
+        font-size: 8px;
+    }
+}
+.team{ 
+    background-color: #F8F9FA;
+}
+.team .img-team{ 
+    border-radius: 50%;
+    border: 7px solid #DFE0E1;
+    width: 250px;
+    height: 250px;
+}
+@media(max-width:768px){ 
+    .team .img-team{ 
+        width: 150px;
+        height: 150px;
+    }
+}
+@media(max-width:370px){ 
+    .team .img-team{ 
+        width: 120px;
+        height: 120px;
+    }
+}
+.team .icone-network,.footer .icone-network{ 
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: black;
+}
+.entreprise img{ 
+    width: 130px;
+    height: 130px;
+}
+@media (max-width:768px){ 
+    .entreprise .ibm{ 
+        width: 100px;
+        height: 100px;
+    }
+}
+.contact{ 
+    background-color: black;
+    background-image: url("img/map-image.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.contact .btn-message{ 
+    width: 300px;
+    height: 50px;
+    margin: auto;
+}
+@media (max-width:768px){ 
+    .contact .btn-message{ 
+        width: 200px;
+        height: 50px;
+    }
+}
+@media(max-width:370px){ 
+    .contact .btn-message{ 
+        width: 130px;
+        height: 50px;
+    }
+}
+@media (max-width:576px){ 
+    .contact .form-control{ 
+        width: 300px;
+        height: 50px;
+    }
 }
